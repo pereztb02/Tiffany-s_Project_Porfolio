@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+  }
+.main-header {
+    display: flex;
+   flex-flow: column wrap;
+align-items: center;
+font-size: 30px;
+margin-bottom: 5px;
+}
+.welcome-message {
+    margin-top: 0px;
+}
+.nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 30px;;
+    font-size: 25px;
+    color: white;
+    
+}
+.intro-in-about {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+/*unvisited link*/
+a:link {
+    color: white;
+    text-decoration: none;
+}
+/*mouse over link*/
+a:hover {
+    color: aquamarine;
+    text-decoration: underline;
+}
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 20%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    /*background-color: white; /* color */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  /* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+body {
+    background-color: #232323;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin-left: 20%; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+    font-size: 20px;
+}
+/* Style page content */
+.main {
+    
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+    
+  }
+
+.card {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: grey;
+}
+.card-content {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Add a transition for opacity */
+}
+/* project pics cards */
+   .projectPics {
+  width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative; /* Add relative positioning for absolute elements */
+    overflow: hidden; /* Hide overflow to ensure the text is hidden initially */
+   }
+   
+   .ProjectsCard {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: space-between; /* Distribute cards evenly in the container */
+    
+}
+   /* fixes images to size of the cards */
+.ProjectsCard img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.3s ease-in-out; /* Add a transition for opacity */
+  }
+
+  .projectPics:hover img {
+    opacity: 0; /* On hover, fade out the image */
+  }
+  .projectPics:hover .card-content {
+    opacity: 1; /* On hover, fade in the text content */
+}
+.link-btn {
+  display: none; /* Hide the button by default */
+  background-color: #007BFF; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 8px 16px; /* Button padding */
+  text-decoration: none; /* Remove underline from the link */
+  border-radius: 4px;
+}
+
+.card-content:hover .link-btn {
+  display: inline-block; /* Show the button on hover */
+}
+.sub-headers {
+background-color: pink;
+font-size: 30px;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+ */
+  /* On smaller screens, where width is less than 450px, sidebar disapears */
+@media screen and (max-width: 450px) {
+    .sidenav {
+        display: none; 
+    }
+    .card {
+      margin: auto;
+      width: 700px;
+      padding: 10px;
+    }
+    .main-header {
+        margin: auto;
+        width: 700px;
+        padding: 10px;
+    }
+    .nav {
+        margin: auto;
+      width: 700px;
+      padding: 10px;
+    }
+    .sub-headers {
+        margin: auto;
+      width: 650px;
+      padding: 10px;
+    }
+    .projectPics {
+        margin-left: 0px;
+    }
+}
+
+
+   
