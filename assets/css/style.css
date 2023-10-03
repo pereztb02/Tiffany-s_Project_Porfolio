@@ -35,18 +35,7 @@ a:hover {
     color: aquamarine;
     text-decoration: underline;
 }
-.sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 20%; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    /*background-color: white; /* color */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
-  }
-  /* The navigation menu links */
+
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -58,15 +47,12 @@ body {
     background-color: #232323;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   margin-left: 20%; /* Same as the width of the sidebar */
     padding: 0px 10px;
     font-size: 20px;
 }
 /* Style page content */
 .main {
-    
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
+        padding: 0px 10px;
     
   }
 
@@ -144,7 +130,11 @@ font-size: 30px;
     flex-flow: column wrap;
     align-items: center;
 }
-
+.intro-para {
+  text-align: center;
+  margin-right: 200px;
+  margin-left: 200px;
+}
  */
   /* On smaller screens, where width is less than 450px, sidebar disapears */
 @media screen and (max-width: 450px) {
